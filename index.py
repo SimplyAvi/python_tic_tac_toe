@@ -61,3 +61,11 @@ def choose_first():
         return 'Player 1'
 # randomly choosing which player starts the game first
 
+#  Write a function that returns a boolean indicating whether a space on the board is freely available.
+
+
+def space_check(board, position):
+
+    return board[position] == ' '
+# placing a space for the X and O's onto the board
+
