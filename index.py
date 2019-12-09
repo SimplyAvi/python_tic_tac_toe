@@ -69,3 +69,18 @@ def space_check(board, position):
     return board[position] == ' '
 # placing a space for the X and O's onto the board
 
+
+# Write a function that checks if the board is full and returns a boolean value. True if full, False otherwise.
+def full_board_check(board):
+
+    for i in range(1, 10):
+        if space_check(board, i):
+            return False
+
+    return True
+# this is trickey because if you go through the itteration and put an else clause to return True if everything
+# is taken the loop does not return true for the board is full!
+
+# checks the board by calling the previous defined function
+# itterates through the position to see if their all filled
+# if their not all filled continue with the game, else all the positions are filled
