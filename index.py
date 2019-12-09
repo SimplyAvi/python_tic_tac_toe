@@ -35,3 +35,19 @@ def player_input():
 
 def place_marker(board, marker, position):
     board[position] = marker
+# places the maker on the tic tak toe board
+
+
+# Write a function that takes in a board and a mark(X or O) and then checks to see if that mark has won
+def win_check(board, mark):
+    return ((board[7] == mark and board[8] == mark and board[9] == mark) or # across the top
+    (board[4] == mark and board[5] == mark and board[6] == mark) or # across the middle
+    (board[1] == mark and board[2] == mark and board[3] == mark) or # across the bottom
+    (board[7] == mark and board[4] == mark and board[1] == mark) or # down the middle
+    (board[8] == mark and board[5] == mark and board[2] == mark) or # down the middle
+    (board[9] == mark and board[6] == mark and board[3] == mark) or # down the right side
+    (board[7] == mark and board[5] == mark and board[3] == mark) or # diagonal
+    (board[9] == mark and board[5] == mark and board[1] == mark))  # diagonal
+# all win conditions for the board
+
+
