@@ -5,6 +5,7 @@
 # Write a function that can print out a board. 
 # Set up your board as a list, where each index 1-9 corresponds with a number on a number pad, 
 # so you get a 3 by 3 board representation.
+import random
 def display_board(board):
     # clear_output()  # dont use in vscode
 #   print('\n'*100) #use in vscode
@@ -50,4 +51,13 @@ def win_check(board, mark):
     (board[9] == mark and board[5] == mark and board[1] == mark))  # diagonal
 # all win conditions for the board
 
+# Write a function that uses the random module to randomly decide which player goes first. 
+# You may want to lookup random.randint() Return a string of which player went first.
+
+def choose_first():
+    if random.randint(0, 1) == 0:
+        return 'Player 2'
+    else:
+        return 'Player 1'
+# randomly choosing which player starts the game first
 
