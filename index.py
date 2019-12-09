@@ -84,3 +84,19 @@ def full_board_check(board):
 # checks the board by calling the previous defined function
 # itterates through the position to see if their all filled
 # if their not all filled continue with the game, else all the positions are filled
+
+
+
+
+# Write a function that asks for a player's next position (as a number 1-9) and 
+# then uses the function from step 6 to check if it's a free position. If it is, 
+# then return the position for later use.
+def player_choice(board):
+    position = 0
+
+    while position not in [1, 2, 3, 4, 5, 6, 7, 8, 9] or not space_check(board, position):
+        position = int(input('Choose your next position:(1-9) '))
+
+    return position
+#     make the input an intiger
+#     not to be confused with the player_choice_marker, this is a function, not a local variable
