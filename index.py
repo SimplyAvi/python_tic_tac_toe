@@ -13,3 +13,21 @@ def display_board(board):
     print(board[4] + '|'+board[5]+'|'+board[6])
     print('-|-|-')
     print(board[1] + '|'+board[2]+'|'+board[3])
+
+#  Write a function that can take in a player input and assign their marker as 'X' or 'O'.
+#  Think about using while loops to continually ask until you get a correct answer.
+
+
+def player_input():
+    player_choice_marker = ''
+
+    while not(player_choice_marker == "X" or player_choice_marker == "O"):
+        player_choice_marker = input(
+            'Player 1: Do you choose to be X or O? ').upper()
+        if player_choice_marker == 'X':
+            return ('X', 'O')
+        else:
+            return ('O', 'X')
+#   returns a list of assigned X,O to the players choice so that you can refer to player 1 as 0, player 2 as 1
+
+
