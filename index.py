@@ -7,7 +7,7 @@
 # so you get a 3 by 3 board representation.
 def display_board(board):
     # clear_output()  # dont use in vscode
-  print('\n'*100) #use in vscode
+#   print('\n'*100) #use in vscode
     print(board[7] + '|'+board[8]+'|'+board[9])
     print('-|-|-')
     print(board[4] + '|'+board[5]+'|'+board[6])
@@ -30,4 +30,8 @@ def player_input():
             return ('O', 'X')
 #   returns a list of assigned X,O to the players choice so that you can refer to player 1 as 0, player 2 as 1
 
+#  Write a function that takes in the board list object, a marker ('X' or 'O'), and a desired 
+# position (number 1-9) and assigns it to the board.
 
+def place_marker(board, marker, position):
+    board[position] = marker
