@@ -100,3 +100,9 @@ def player_choice(board):
     return position
 #     make the input an intiger
 #     not to be confused with the player_choice_marker, this is a function, not a local variable
+
+
+# Write a function that asks the player if they want to play again and returns a boolean True if they do want to play again.
+def replay():
+
+    return input('Do you want to play again? Enter Yes or No: ').lower().startswith('y')
